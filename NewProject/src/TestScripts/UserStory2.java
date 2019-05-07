@@ -30,12 +30,12 @@ WebDriver driver;
 		 Actions actions = new Actions(driver);
 		 
 		
-			//Current age =45
+			// WHEN CURRENT AGE = 45
 			
 		  WebElement element = driver.findElement(By.xpath("//div[@help-id='CurrentAge']//input[@class='ng-pristine ng-valid']"));
 			actions.moveToElement(element).click().sendKeys("45").perform();
 			
-			//Employment status
+			//Employment status = SELF-EMPLOYED
 		 
 			element = driver.findElement(By.xpath("//div[@help-id='EmploymentStatus']//i[@class='ir dropdown-arrow']"));
 			actions.moveToElement(element).click().perform();
@@ -78,7 +78,29 @@ WebDriver driver;
 			
 			
 			
-		 
+		 // Below is the output
+			
+		/*..	[RemoteTestNG] detected TestNG version 6.14.3
+			Starting ChromeDriver 2.39.562718 (9a2698cba08cf5a471a29d30c8b3e12becabb0e9) on port 36769
+			Only local connections are allowed.
+			May 07, 2019 10:56:04 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+			INFO: Detected dialect: OSS
+			KiwiSaver balance is estimated to be:$
+			230,481
+			PASSED: TestCase
+
+			===============================================
+			    Default test
+			    Tests run: 1, Failures: 0, Skips: 0
+			===============================================
+
+
+			===============================================
+			Default suite
+			Total tests run: 1, Failures: 0, Skips: 0
+			===============================================  */
+
+
 		 
 		 
 		 
